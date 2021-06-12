@@ -97,7 +97,7 @@ void *mythread(void *arg)
                                                                              
 int main(int argc, char *argv[])
 {                    
-    clock_t start, end;
+    clock_t start, finish;
     float time;
     start = clock();
     
