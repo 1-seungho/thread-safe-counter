@@ -14,7 +14,7 @@ union semun {
         ushort *array;
 };
 
-#define PATH "mnt/C/Users/Han/Desktop
+#define PATH "mnt/C/Users/Han/Desktop"
 
 typedef struct __counter_t {
     int value;
@@ -29,7 +29,7 @@ void init(counter_t *c) {
     c->value = 0;
     key_t key;
     key = fhok(PATH, 'z');
-    c->semid = semget(c->key, 1,0600 | IPC_CREAT);
+    semid = semget(c->key, 1,0600 | IPC_CREAT);
 }
 
 void increment(counter_t *c) {
