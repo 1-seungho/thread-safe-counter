@@ -28,7 +28,7 @@ counter_t counter;
 void init(counter_t *c) {
     c->value = 0;
     key_t key;
-    key = fhok(PATH, 'z');
+    key = ftok(PATH, 'z');
     semid = semget(c->key, 1,0600 | IPC_CREAT);
 }
 
